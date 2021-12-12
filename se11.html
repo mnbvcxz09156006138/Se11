@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="se11.css">
+</head>
+
+<body>
+    
+    <h2>  android </h2>
+    <div>
+        <div id="ears">
+
+        </div>
+        <div id="head">
+            <span id="eyes"></span>
+        </div>
+
+        <div id="body">
+
+        </div>
+
+        <div id="left-hand">
+        </div>
+
+        <div id="right-hand">
+
+        </div>
+
+        <div id="foot-left"></div>
+        <div id="foot-right"></div>
+
+    </div>
+
+
+    <script>
+
+
+        var my_head = document.getElementById("head");
+        var my_body = document.getElementById("body");
+        var left_hand = document.getElementById("left-hand");
+        var right_hand = document.getElementById("right-hand");
+        var my_eyes = document.getElementById("eyes");
+        var eyess = document.getElementById("eyes")
+
+
+
+        my_head.onclick = function () {
+            my_eyes.style.width = "10px"
+            my_eyes.style.height = "10px"        
+        }
+
+        my_body.onclick = function () {
+            my_eyes.style.width = "20px"
+            my_eyes.style.height = "5px"
+            my_eyes.after.style.width = "20px"
+            
+
+
+        }
+
+        left_hand.onclick = function () {
+            left_hand.style.transform = "rotate(130deg)"
+            left_hand.style.transition = "2s"
+            left_hand.style.display = "inherit"
+            setTimeout(function () {
+                left_hand.style.transform = "rotate(0deg)"
+            }, 5000)
+        }
+        right_hand.onclick = function () {
+            right_hand.style.transform = "rotate(-120deg)"
+            right_hand.style.transition = "2s"
+            right_hand.onclick = function () {
+            right_hand.style.transform = "rotate(0deg)"
+        }
+
+        }
+        
+    </script>
+    
+</body>
+
+</html>
